@@ -18,7 +18,6 @@ ro.oplus.system.camera.name=com.oplus.camera
 ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight
 ro.oplus.camera.video_beauty.prefix=oplus.video.beauty.
 ro.oplus.camera.video.beauty.switch=oplus.switch.video.beauty
-ro.oplus.camera.speechassist=true
 
 # DPM
 persist.vendor.dpm.feature=11
@@ -42,7 +41,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mmp.enable.3g2=true
-vendor.mm.enable.qcom_parser=4039922
+vendor.mm.enable.qcom_parser=4044018
 ro.media.recorder-max-base-layer-fps=60
 
 # Netmgr

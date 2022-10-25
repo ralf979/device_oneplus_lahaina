@@ -6,7 +6,7 @@
 
 on early-init
     # Oplus audio modules
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules q6_pdr_dlkm q6_notifier_dlkm snd_event_dlkm apr_dlkm adsp_loader_dlkm q6_dlkm native_dlkm pinctrl_wcd_dlkm pinctrl_lpi_dlkm swr_dlkm platform_dlkm hdmi_dlkm stub_dlkm wcd_core_dlkm wsa883x_dlkm bolero_cdc_dlkm wsa_macro_dlkm va_macro_dlkm rx_macro_dlkm tx_macro_dlkm bt_fm_slim wcd938x_dlkm wcd938x_slave_dlkm swr_dmic_dlkm swr_haptics_dlkm machine_dlkm radio-i2c-rtc6226-qca mmc_core mmc_block sdhci sdhci-pltfm sdhci-msm cdsprm tfa98xx-v6_dlkm
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmc_core mmc_block sdhci sdhci-pltfm sdhci-msm tfa98xx-v6_dlkm
 
 on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
@@ -82,12 +82,12 @@ on property:ro.boot.prjname=*
 on property:sys.boot_completed=1
     # Display
     copy /vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm /mnt/vendor/persist/data/pfm/licenses/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-    copy /vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-958228818.pfm
+    copy /vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-958228818.pfm
-    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-958228818.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
+    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
 

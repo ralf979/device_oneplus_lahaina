@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Camera
-/dev/explorer_preisp                           0660    cameraserver   camera
-
 # Reserve
 /dev/block/bootdevice/by-name/oplusreserve1    0660    root    system
 
